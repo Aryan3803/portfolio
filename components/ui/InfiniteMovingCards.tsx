@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const InfiniteMovingCards = ({
   items,
@@ -12,8 +13,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     quote: string;
-    name: string;
-    title: string;
+    link: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -103,14 +103,19 @@ export const InfiniteMovingCards = ({
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
+                {/* <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
                     {item.name}
                   </span>
                   <span className="text-sm leading-[1.6] font-normal text-white-200">
                     {item.title}
                   </span>
-                </span>
+                </span> */}
+                {/* <a href={item.link}>
+                  <div className="flex justify-center items-center text-purple text-xl ">
+                    Check it out &nbsp; <FaLocationArrow/> 
+                  </div>
+                </a> */}
               </div>
             </blockquote>
           </li>

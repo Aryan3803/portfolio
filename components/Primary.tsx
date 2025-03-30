@@ -1,8 +1,18 @@
+"use client";
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+
+const download = () => {
+  const link = document.createElement("a");
+  link.href = "/aryan_resume.pdf"; 
+  link.download = "My_Resume.pdf"; 
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 function Primary() {
   return (
@@ -30,15 +40,11 @@ function Primary() {
       </div>
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <h2 className="uppercase tracking-widest text-xs text-center
-            text-blue-100 max-w-80 ">
-              Dynamic Website
-            </h2>
             <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl" 
             words="Code. Design. Innovate."/>
 
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="text-center md:tracking-wider mb-4 text-xl lg:text-3xl">
               Hi, I&apos;m Aryan
             </p>
 
@@ -46,6 +52,8 @@ function Primary() {
               title="Show my work "
               icon={<FaLocationArrow/>}
               position="right"
+              otherClasses="md:w-60 md:mt-10"
+              handleClick={download}
              />
 
         </div>

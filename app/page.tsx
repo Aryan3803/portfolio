@@ -1,6 +1,5 @@
 import Achievements from "@/components/Achievements";
 import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Primary from "@/components/Primary";
@@ -9,6 +8,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data/index";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
+import MySkills from "@/components/MySkills";
 
 export default function Home() {
   return (
@@ -18,9 +18,9 @@ export default function Home() {
         <FloatingNav navItems={navItems}/>
         <Primary/>
         <Grid/>
+        <MySkills/>
         <RecentProjects/>
-        <Achievements/>
-        <Experience/>
+        <Achievements/>        
         <Approach/>
         <Footer/>
       </div>

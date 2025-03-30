@@ -12,7 +12,7 @@ const Approach=()=> {
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card title="Planning & Strategy" icon={<AceternityIcon order="Phase 1" />}
-        description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+        description="Every successful project starts with a solid plan. I begin by understanding your goals, target audience, and core functionalities. We’ll collaborate on structuring the website, defining navigation, and outlining content requirements to ensure a seamless user experience."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -20,7 +20,7 @@ const Approach=()=> {
           />
         </Card>
         <Card title="Develpment & Progress Update" icon={<AceternityIcon order="Phase 2"/>}
-        description="Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+        description="With a clear roadmap in place, I transition into development. From wireframes to functional prototypes, I focus on writing clean, efficient code while keeping you informed throughout the process. Iterative feedback ensures we stay aligned with your vision."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -33,7 +33,7 @@ const Approach=()=> {
           />
           </Card>
         <Card title="Development & Launch" icon={<AceternityIcon order="Phase 3"/>}
-        description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+        description="This is where everything comes to life. I refine the design into fully functional code, ensuring responsiveness, performance, and usability. Before deployment, I conduct thorough testing to deliver a polished, high-quality solution."
         >
           <CanvasRevealEffect
             animationSpeed={3}
